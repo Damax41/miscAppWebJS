@@ -1,0 +1,221 @@
+:root {
+	--blue: #007bff;
+	--indigo: #6610f2;
+	--purple: #6f42c1;
+	--pink: #e83e8c;
+	--red: #dc3545;
+	--orange: #fd7e14;
+	--yellow: #ffc107;
+	--green: #28a745;
+	--teal: #20c997;
+	--cyan: #17a2b8;
+	--white: #fff;
+	--gray: #6c757d;
+	--gray-dark: #343a40;
+	--black: #212529;
+	--primary: #007bff;
+	--secondary: #6c757d;
+	--success: #28a745;
+	--info: #17a2b8;
+	--warning: #ffc107;
+	--danger: #dc3545;
+	--light: #f8f9fa;
+	--dark: #343a40;
+	--font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	--font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: var(--font-family-monospace);
+	font-size: 1rem;
+}
+
+#container {
+	width: 90%;
+	margin: auto;
+}
+
+#loginContent {
+	width: 25rem;
+	margin: auto;
+}
+
+@media screen and (max-width: 500px){
+	#loginContent {
+		width: 15rem;
+	}
+}
+
+#loginTitle {
+	text-align: center;
+	margin-bottom: 1.5rem;
+	margin-top: 1.5rem;
+	font-size: 1.5rem;
+}
+
+#loginBorder {
+	border: 1px solid rgba(75, 75, 75, 0.125);
+	border-radius: .75rem;
+	background-color: #464646;
+}
+
+#loginForm {
+	padding: 0 1.25rem;
+}
+
+label {
+	display: inline-block;
+	margin-bottom: .5rem;
+}
+
+.form-control {
+	display: block;
+	width: 100%;
+	height: calc(2.25rem + 2px);
+	padding: .625rem .75rem;
+	font-size: 1rem;
+	color: #8C8C8C;
+	border: none;
+	border-radius: .25rem;
+	background-color: #464646;
+}
+
+.form-control:active {
+	border: none;
+}
+
+.form-group {
+	border-bottom: #8C8C8C dotted 0.15rem;
+}
+
+#loginSubmit {
+	display: inline-block;
+	color: var(--white);
+	cursor: pointer;
+	background-color: #A9A9E6;
+	border: 1px solid transparent;
+	border-radius: .25rem;
+	font-size: 1rem;
+	padding: .375rem .75rem;
+	transition: color .15s ease-in-out, background-color .15s ease-in-out;
+	margin: 1.5rem 0;
+}
+
+#loginSubmit:hover {
+	color: #fafafa;
+	background-color: #8989B6;
+}
+
+#loginError {
+	width: 50%;
+	margin: .5rem auto .5rem auto;
+	background-color: #fc5565;
+	color: #721c24;
+	border: 1px solid var(--danger);
+	border-radius: .25rem;
+	font-size: 1rem;
+	padding: .375rem .75rem;
+}
+
+#logged {
+	width: 100%;
+	margin: auto;
+	background-color: var(--warning);
+	border: 1px solid var(--warning);
+	border-radius: .25rem;
+	font-size: 1rem;
+	padding: .375rem .75rem;
+}
+
+body {
+    font-family: 'Metropolis';
+    color: #FFFFFF;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to bottom right, #2C2C2C 55%, #6b6b6b);
+    background-repeat: no-repeat;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('/login/Metropolis-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('/login/Metropolis-SemiBold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('/login/Metropolis-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('/login/Metropolis-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('/login/Metropolis-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('/login/Metropolis-ExtraLight.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+.c700 { font-weight: 700; }
+.c600 { font-weight: 600; }
+.c500 { font-weight: 500; }
+.c400 { font-weight: 400; }
+.c300 { font-weight: 300; }
+.c200 { font-weight: 200; }
+
+span.titre {
+    font-size: 2.25rem;
+    margin-right: 0.2rem;
+    display: none;
+}
+
+#bar-vertical {
+    color: #FFFFFF;
+    width: 1px;
+    height: 3rem;
+    background-color: currentColor;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+#bar-vertical.blink {
+    animation: blink 0.5s infinite;
+}
+
+div.titre {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    margin: 1.5rem auto 1.5rem auto;
+}
